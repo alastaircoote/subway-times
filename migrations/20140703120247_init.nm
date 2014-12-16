@@ -1,0 +1,85 @@
+###
+exports.up = (knex, Promise) ->
+    knex.schema.createTable 'agency', (table) ->
+        table.string 'agency_id'
+        table.string 'agency_name'
+        table.string 'agency_url'
+        table.string 'agency_timezone'
+        table.string 'agency_lang'
+        table.string 'agency_phone'
+
+    .then -> knex.schema.createTable 'calendar', (table) ->
+        table.string('service_id').primary()
+        table.integer 'monday'
+        table.integer 'tuesday'
+        table.integer 'wednesday'
+        table.integer 'thursday'
+        table.integer 'friday'
+        table.integer 'saturday'
+        table.integer 'sunday'
+        table.string 'start_date'
+        table.string 'end_date'
+
+    .then -> knex.schema.createTable 'calendar_dates', (table) ->
+        table.string('service_id').references('service_id').inTable('calendar')
+        table.string 'date'
+        table.integer 'exception_type'
+
+    .then -> knex.schema.createTable 'shapes', (table) ->
+        table.string 'shape_id'
+        table.string 'shape_pt_sequence'
+        table.float 'shape_pt_lat'
+        table.float 'shape_pt_lon'
+
+    .then -> knex.schema.createTable 'routes', (table) ->
+        table.string 'agency_id'
+        table.string('route_id').primary()
+        table.string 'route_short_name'
+        table.string 'route_long_name'
+        table.integer 'route_type'
+        table.string 'route_desc'
+        table.string 'route_url'
+        table.string 'route_color'
+        table.string 'route_text_color'
+
+    .then -> knex.schema.createTable 'stops', (table) ->
+        table.string('stop_id').primary()
+        table.string 'stop_name'
+        table.float 'stop_lat'
+        table.float 'stop_lon'
+        table.integer 'location_type'
+        table.string 'parent_station'
+
+    .then -> knex.schema.createTable 'trips', (table) ->
+        table.string('trip_id').primary()
+        table.string('route_id').references('route_id').inTable('routes')
+        table.string('service_id').references('service_id').inTable('calendar')
+        table.string 'trip_headsign'
+        table.integer 'direction_id'
+        table.string 'shape_id'
+
+    .then -> knex.schema.createTable 'stop_times', (table) ->
+        table.string('trip_id')#.references('trip_id').inTable('trips')
+        table.string('stop_id')#.references('stop_id').inTable('stops')
+        table.string 'arrival_time'
+        table.string 'departure_time'
+        table.integer 'stop_sequence'
+        table.string 'pickup_type'
+        table.string 'drop_off_type'
+        table.primary ['trip_id', 'stop_id']
+        
+    .then -> knex.schema.createTable 'transfers', (table) ->
+        table.string('from_stop_id')#.references('stop_id').inTable('stops')
+        table.string('to_stop_id')#.references('stop_id').inTable('stops')
+        table.integer 'transfer_type'
+        table.integer 'min_transfer_time'
+        table.primary ['from_stop_id', 'to_stop_id']
+        
+
+    .catch (err) ->
+        console.log err
+
+
+
+exports.down = (knex, Promise) ->
+###

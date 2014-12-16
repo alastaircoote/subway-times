@@ -1,0 +1,4887 @@
+[
+  {
+    "trip_id": "068800_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L21S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748820,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748835,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749006,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748774,
+    "vehicle": {
+      "trip": {
+        "trip_id": "068800_L..S",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 16,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748774,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "069000_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L03N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748757,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748772,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748858,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748873,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L01N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749008,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748744,
+    "vehicle": {
+      "trip": {
+        "trip_id": "069000_L..N",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 21,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748744,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "069600_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L16S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748847,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748862,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749057,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749072,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749147,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749162,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749267,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749282,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749357,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749372,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749543,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748789,
+    "vehicle": {
+      "trip": {
+        "trip_id": "069600_L..S",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 12,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748789,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "069800_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L10N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748796,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748811,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748887,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748902,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749127,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749142,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749187,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749202,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749247,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749262,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749337,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749352,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L01N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749487,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748774,
+    "vehicle": {
+      "trip": {
+        "trip_id": "069800_L..N",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 17,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748774,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "070400_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L08S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748838,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748853,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748928,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748943,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748988,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749003,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749078,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749093,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749138,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749153,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749228,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749243,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749348,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749363,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749438,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749453,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749648,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749663,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749738,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749753,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749858,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749873,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749948,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749963,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750134,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748759,
+    "vehicle": {
+      "trip": {
+        "trip_id": "070400_L..S",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 5,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748759,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "070600_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L16N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748852,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748867,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748942,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748957,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749062,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749077,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749182,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749197,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749242,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749257,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749332,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749347,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749392,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749407,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749482,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749497,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749722,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749737,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749782,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749797,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749842,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749857,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749932,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749947,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L01N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750082,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "IN_TRANSIT_TO",
+    "stop_id": null,
+    "timestamp": 1418748789,
+    "vehicle": {
+      "trip": {
+        "trip_id": "070600_L..N",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 11,
+      "stop_id": null,
+      "current_status": 2,
+      "timestamp": {
+        "low": 1418748789,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "071200_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L02S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748795,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748810,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748885,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748900,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748915,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748930,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748975,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748990,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749215,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749230,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749305,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749320,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749365,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749380,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749455,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749470,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749515,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749530,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749605,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749620,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749725,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749740,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749815,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749830,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750025,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750040,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750115,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750130,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750235,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750250,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750325,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750340,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750511,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748759,
+    "vehicle": {
+      "trip": {
+        "trip_id": "071200_L..S",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 1,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748759,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "071250_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L27N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748863,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748878,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L26N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748890,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748905,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L25N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748980,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748995,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L24N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749070,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749085,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749160,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748759,
+    "vehicle": {
+      "trip": {
+        "trip_id": "071250_L..N",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 2,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748759,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "071400_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L22N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748825,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748840,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748885,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748900,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418748975,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418748990,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749125,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749140,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749215,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749230,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749305,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749320,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749395,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749410,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749515,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749530,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749635,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749650,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749695,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749710,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749785,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749800,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749845,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749860,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749935,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749950,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750175,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750190,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750235,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750250,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750295,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750310,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750385,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750400,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L01N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750535,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748780,
+    "vehicle": {
+      "trip": {
+        "trip_id": "071400_L..N",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 6,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748780,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "072000_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L01S",
+        "arrival": null,
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749200,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749275,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749290,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749365,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749380,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749395,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749410,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749455,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749470,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749695,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749710,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749785,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749800,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749845,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749860,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749935,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749950,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749995,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750010,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750085,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750100,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750205,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750220,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750295,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750310,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750505,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750520,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750595,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750610,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750715,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750730,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750805,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750820,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750991,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ],
+    "current_status": "STOPPED_AT",
+    "stop_id": null,
+    "timestamp": 1418748780,
+    "vehicle": {
+      "trip": {
+        "trip_id": "072000_L..S",
+        "route_id": "L",
+        "start_time": null,
+        "start_date": "20141216",
+        "schedule_relationship": null
+      },
+      "vehicle": null,
+      "position": null,
+      "current_stop_sequence": 0,
+      "stop_id": null,
+      "current_status": 1,
+      "timestamp": {
+        "low": 1418748780,
+        "high": 0,
+        "unsigned": true
+      },
+      "congestion_level": null
+    }
+  },
+  {
+    "trip_id": "072200_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L22N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749305,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749320,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749365,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749380,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749455,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749470,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749605,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749620,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749695,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749710,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749785,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749800,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749875,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749890,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749995,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750010,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750115,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750130,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750175,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750190,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750265,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750280,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750325,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750340,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750415,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750430,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750655,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750670,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750715,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750730,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750775,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750790,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750865,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750880,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L01N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751015,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ]
+  },
+  {
+    "trip_id": "072500_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749485,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749500,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L24S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749575,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749590,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L25S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749665,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749680,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L26S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749755,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749770,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L27S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749845,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749860,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L28S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749965,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749980,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L29S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750025,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ]
+  },
+  {
+    "trip_id": "072800_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L01S",
+        "arrival": null,
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749680,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749755,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749770,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749845,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749860,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749875,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749890,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749935,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749950,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750175,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750190,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750265,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750280,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750325,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750340,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750415,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750430,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750475,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750490,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750565,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750580,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750685,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750700,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750775,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750790,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750985,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751000,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751075,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751090,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751195,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751210,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751285,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751300,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751471,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ]
+  },
+  {
+    "trip_id": "073000_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L22N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749785,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749800,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749845,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749860,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418749935,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418749950,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750085,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750100,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750175,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750190,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750265,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750280,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750355,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750370,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750475,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750490,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750595,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750610,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750655,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750670,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750745,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750760,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750805,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750820,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750895,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750910,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751135,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751150,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751195,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751210,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751255,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751270,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751345,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751360,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L01N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751495,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ]
+  },
+  {
+    "trip_id": "073600_L..S",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L01S",
+        "arrival": null,
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750160,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750235,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750250,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750325,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750340,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750355,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750370,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750415,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750430,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750655,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750670,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750745,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750760,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750805,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750820,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750895,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750910,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750955,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750970,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751045,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751060,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751165,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751180,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751255,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751270,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751465,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751480,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751555,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751570,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751675,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751690,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751765,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751780,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22S",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751951,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ]
+  },
+  {
+    "trip_id": "073650_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L29N",
+        "arrival": null,
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750190,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L28N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750265,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750280,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L27N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750385,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750400,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L26N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750475,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750490,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L25N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750565,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750580,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L24N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750655,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750670,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L22N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750745,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ]
+  },
+  {
+    "trip_id": "073800_L..N",
+    "stop_time_update": [
+      {
+        "stop_sequence": null,
+        "stop_id": "L22N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750265,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750280,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L21N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750325,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750340,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L20N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750415,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750430,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L19N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750565,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750580,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L17N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750655,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750670,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L16N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750745,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750760,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L15N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750835,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750850,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L14N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418750955,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418750970,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L13N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751075,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751090,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L12N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751135,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751150,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L11N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751225,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751240,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L10N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751285,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751300,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L08N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751375,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751390,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L06N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751615,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751630,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L05N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751675,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751690,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L03N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751735,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751750,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L02N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751825,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": {
+          "delay": null,
+          "time": {
+            "low": 1418751840,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "schedule_relationship": 0
+      },
+      {
+        "stop_sequence": null,
+        "stop_id": "L01N",
+        "arrival": {
+          "delay": null,
+          "time": {
+            "low": 1418751975,
+            "high": 0,
+            "unsigned": false
+          },
+          "uncertainty": null
+        },
+        "departure": null,
+        "schedule_relationship": 0
+      }
+    ]
+  }
+]
