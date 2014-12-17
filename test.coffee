@@ -119,6 +119,7 @@ doCheck = ->
             #console.log "Inserted #{trips.length} trips..."
     .catch (err) ->
         # We just want to swallow the error
+        return true
     .finally ->
         setTimeout doCheck, 15000
 
