@@ -1,7 +1,7 @@
 ProtoBuf = require 'protobufjs'
 Promise = require 'bluebird'
 path = require 'path'
-fs = require 'fs'
+fs = Promise.promisifyAll require 'fs'
 requestAsync = Promise.promisify require 'request'
 
 Knex = require 'knex'
