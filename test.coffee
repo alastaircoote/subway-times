@@ -33,9 +33,10 @@ doCheck = ->
             response = null
             try
                 response = realtime.FeedMessage.decode(res.body)
-            catch
+            catch err
                 console.log new Date().getHours() + ':' + new Date().getMinutes() + " - Parse of #{url} failed."
-                return fs.writeFileAsync './failed-parse.txt', body
+                fs.writeFileAsync './failed-parse.txt', body
+                throw err
             return response
 
     .each (response) ->
@@ -113,7 +114,6 @@ doCheck = ->
         
         .then (trips) ->
             #console.log "Inserted #{trips.length} trips..."
-
     .finally ->
         setTimeout doCheck, 15000
 
