@@ -36,9 +36,12 @@ doCheck = ->
             catch err
                 console.log new Date().getHours() + ':' + new Date().getMinutes() + " - Parse of #{url} failed."
                 fs.writeFileAsync './failed-parse.txt', body
-                throw err
+                return null
+            
             return response
 
+    .filter (response) ->
+        response != null
     .each (response) ->
 
         trips = []
@@ -114,6 +117,8 @@ doCheck = ->
         
         .then (trips) ->
             #console.log "Inserted #{trips.length} trips..."
+    .catch (err) ->
+        # We just want to swallow the error
     .finally ->
         setTimeout doCheck, 15000
 
