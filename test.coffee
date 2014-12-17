@@ -27,7 +27,7 @@ doCheck = ->
         try
             response = realtime.FeedMessage.decode(res.body)
         catch
-            console.log 'Parse failed.'
+            console.log new Date().getHours() + ':' + new Date().getMinutes() + ' - Parse failed.'
             return
 
         trips = []
@@ -60,47 +60,47 @@ doCheck = ->
                 #for key,val of entity
                 #    targetTrip[key] = val
 
-        return trips.filter (t) ->
+        trips = trips.filter (t) ->
             t.vehicle and t.stop_time_update
 
-    .filter (trip) ->
-        # Only add updates that have changed since last time.
-        DB.select('timestamp')
-            .from('trip_timestamps')
-            .where('trip_id',trip.trip_id)
-            .orderBy('timestamp','desc')
-            .limit(1)
-        .then (rows) ->
-            return !rows[0] or rows[0].timestamp != trip.timestamp
-    .each (trip) ->
+        Promise.filter trips, (trip) ->
+            # Only add updates that have changed since last time.
+            DB.select('timestamp')
+                .from('trip_timestamps')
+                .where('trip_id',trip.trip_id)
+                .orderBy('timestamp','desc')
+                .limit(1)
+            .then (rows) ->
+                return !rows[0] or rows[0].timestamp != trip.timestamp
+        .each (trip) ->
 
 
 
 
-        DB('trip_timestamps')
-        .insert
-            trip_id: trip.trip_id
-            route_id: trip.route_id
-            timestamp: trip.timestamp
-            current_stop: trip.stop_id
-            current_status: trip.current_status
-            current_stop_sequence: trip.current_stop_sequence
-        .then ->
+            DB('trip_timestamps')
+            .insert
+                trip_id: trip.trip_id
+                route_id: trip.route_id
+                timestamp: trip.timestamp
+                current_stop: trip.stop_id
+                current_status: trip.current_status
+                current_stop_sequence: trip.current_stop_sequence
+            .then ->
 
-            stopRows = trip.stop_time_update.map (t) ->
-                return {
-                    timestamp: trip.timestamp
-                    trip_id: trip.trip_id
-                    stop_id: t.stop_id
-                    arrival_time: t.arrival?.time.low
-                    departure_time: t.departure?.time.low
-                }
+                stopRows = trip.stop_time_update.map (t) ->
+                    return {
+                        timestamp: trip.timestamp
+                        trip_id: trip.trip_id
+                        stop_id: t.stop_id
+                        arrival_time: t.arrival?.time.low
+                        departure_time: t.departure?.time.low
+                    }
 
-            DB('timestamp_updates')
-                .insert stopRows
-    
-    .then (trips) ->
-        console.log "Inserted #{trips.length} trips..."
+                DB('timestamp_updates')
+                    .insert stopRows
+        
+        .then (trips) ->
+            #console.log "Inserted #{trips.length} trips..."
         ###
         trips = trips.sort (a,b) ->
             return a.trip_id - b.trip_id
