@@ -3,9 +3,11 @@
 module.exports =
 
   development:
-    client: 'sqlite'
+    client: 'postgresql'
     connection:
-      filename: './subway.db'
+      database: 'subwaydata'
+      user:     'subway'
+      password: 'sub'
     pool:
       min: 2
       max: 10
