@@ -78,8 +78,7 @@ doCheck = ->
         trips = trips.filter (t) ->
             t.vehicle and t.stop_time_update
 
-        console.log "Received #{trips.length} trips."
-
+       
         Promise.filter trips, (trip) ->
             # Only add updates that have changed since last time.
             DB.select('timestamp')
@@ -90,8 +89,7 @@ doCheck = ->
             .then (rows) ->
                 return rows.length == 0 or String(rows[0].timestamp) != String(trip.timestamp)
         .then (trips) ->
-            console.log "Filtered down to #{trips.length} trips."
-
+            
             for trip in trips
                 filtered = trips.filter (t) ->
                     t.trip_id == trip.trip_id and t.timestamp == trip.timestamp
