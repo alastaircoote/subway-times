@@ -34,8 +34,7 @@ doCheck = ->
             try
                 response = realtime.FeedMessage.decode(res.body)
             catch err
-                console.log new Date().getHours() + ':' + new Date().getMinutes() + " - Parse of #{url} failed."
-                fs.writeFileAsync './failed-parse.txt', body
+                #console.log new Date().getHours() + ':' + new Date().getMinutes() + " - Parse of #{url} failed."
                 return null
             
             return response
@@ -119,6 +118,7 @@ doCheck = ->
             #console.log "Inserted #{trips.length} trips..."
     .catch (err) ->
         # We just want to swallow the error
+        console.log "Error encountered: " + err
         return true
     .finally ->
         setTimeout doCheck, 15000
