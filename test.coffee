@@ -78,7 +78,7 @@ doCheck = ->
         trips = trips.filter (t) ->
             t.vehicle and t.stop_time_update
 
-        console.log "Received #{trip.length} trips."
+        console.log "Received #{trips.length} trips."
 
         Promise.filter trips, (trip) ->
             # Only add updates that have changed since last time.
