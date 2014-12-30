@@ -88,6 +88,7 @@ doCheck = ->
                 .orderBy('timestamp','desc')
                 .limit(1)
             .then (rows) ->
+                console.log rows[0].timestamp, trip.timestamp
                 return !rows[0] or rows[0].timestamp != trip.timestamp
         .then (trips) ->
             console.log "Filtered down to #{trips.length} trips."
