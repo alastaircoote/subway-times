@@ -91,6 +91,16 @@ doCheck = ->
                 return !rows[0] or rows[0].timestamp != trip.timestamp
         .then (trips) ->
             console.log "Filtered down to #{trips.length} trips."
+
+            for trip in trips
+                filtered = trips.filter (t) ->
+                    t.trip_id == trip.trip_id and t.timestamp == trip.timestamp
+
+                if filtered.length > 1
+                    console.log 'multiple timestamp things'
+
+
+
             return trips
         .each (trip) ->
 
