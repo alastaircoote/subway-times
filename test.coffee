@@ -167,7 +167,7 @@ doCheck = ->
                 fs.closeAsync file.handle
 
             lastTrips = trips
-            console.log Moment().format("HH:MM:ss") + " - Wrote #{filteredTrips.length} out of #{trips.length} trips in #{numFeeds} feeds."
+            console.log Moment().format("HH:mm:ss") + " - Wrote #{filteredTrips.length} out of #{trips.length} trips in #{numFeeds} feeds."
             return fs.writeFileAsync(__dirname + '/last_response.json',JSON.stringify(trips))
             .then -> return Moment(lowestTimestamp * 1000)
     .then (todayMoment) ->
@@ -183,7 +183,7 @@ doCheck = ->
             fs.statAsync(file)
             .then ->
                 new Promise (fulfill, reject) ->
-                    console.log Moment().format("HH:MM:ss") + " - Compressing #{file}"
+                    console.log Moment().format("HH:mm:ss") + " - Compressing #{file}"
                     gzip = zlib.createGzip()
                     inp = fs.createReadStream file
                     out = fs.createWriteStream file + '.gz'
@@ -204,7 +204,7 @@ doCheck = ->
 
     .catch (err) ->
         # We just want to swallow the error
-        console.log Moment().format("HH:MM:ss") + "- Error encountered: " + err
+        console.log Moment().format("HH:mm:ss") + "- Error encountered: " + err
         return true
     .finally ->
         setTimeout doCheck, 5000
