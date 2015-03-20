@@ -2,13 +2,10 @@ ProtoBuf = require 'protobufjs'
 Promise = require 'bluebird'
 path = require 'path'
 fs = Promise.promisifyAll require 'fs'
+zlib = require 'zlib'
 requestAsync = Promise.promisify require 'request'
 
-Knex = require 'knex'
-Knexfile = require './knexfile'
 Moment = require 'moment'
-
-DB = Knex Knexfile.development
 
 builder = ProtoBuf.loadProtoFile(path.join(__dirname, "gtfs-realtime.proto"))
 
@@ -19,11 +16,24 @@ CURRENT_STATUS =
     1: "STOPPED_AT"
     2: "IN_TRANSIT_TO"
 
-lastTimeStamp = 0
+# We keep track of the timestamps in the headers, and disregard any we've already checked
+lastTimeStamps = []
+
+# We only add updated trips
+lastTrips = []
+
+fs.mkdirAsync(__dirname + '/time-data')
+.catch (err) ->
+    if (err.cause.code != 'EEXIST') then throw err
+
+numFeeds = 0
+isCompressingNow = false
+
 doCheck = ->
     Promise.map [
         'http://datamine.mta.info/mta_esi.php?key=247e4c91f9904df0b62dbc4ea9845c94&feed_id=1',
-        'http://datamine.mta.info/mta_esi.php?key=247e4c91f9904df0b62dbc4ea9845c94&feed_id=2'
+        'http://datamine.mta.info/mta_esi.php?key=247e4c91f9904df0b62dbc4ea9845c94&feed_id=2',
+        'http://datamine.mta.info/mta_esi.php?key=247e4c91f9904df0b62dbc4ea9845c94&feed_id=11'
     ], (url) ->
 
         requestAsync
@@ -39,10 +49,20 @@ doCheck = ->
             
             return response
 
-    .filter (response) ->
-        response != null
-    .each (response) ->
-
+    .filter (response, i) ->
+        if !response then return false
+        if !lastTimeStamps[i] then return true
+        return response.header.timestamp.low > lastTimeStamps[i]
+    .then (feeds) ->
+        numFeeds = feeds.length
+        return feeds
+    .each (response, i) ->
+        lastTimeStamps[i] = response.header.timestamp.low
+    .reduce (prev, item) ->
+        # Merge the feeds into one.
+        return prev.concat(item.entity)
+    , []
+    .then (entities) ->
         trips = []
 
         findTrip = (tripId) ->
@@ -53,7 +73,7 @@ doCheck = ->
 
             return targetTrip
 
-        for entity in response.entity
+        for entity in entities
             if entity.trip_update
                 tripId = entity.trip_update.trip.trip_id
 
@@ -80,60 +100,119 @@ doCheck = ->
 
        
         Promise.filter trips, (trip) ->
+            if !lastTrips then return true
             # Only add updates that have changed since last time.
-            DB.select('timestamp')
-                .from('trip_timestamps')
-                .where('trip_id',trip.trip_id)
-                .orderBy('timestamp','desc')
-                .limit(1)
-            .then (rows) ->
-                return rows.length == 0 or String(rows[0].timestamp) != String(trip.timestamp)
-        .then (trips) ->
+
+            entryLastTime = lastTrips.filter((t) -> t.trip_id == trip.trip_id)[0]
+
+            # No entry for this trip
+            if (!entryLastTime) then return true
+            # If it's the same timestamp, ignore
+
+            if (entryLastTime.timestamp == trip.timestamp)
+                return false
+
+            return true
+
+        .then (filteredTrips) ->
             
-            for trip in trips
-                filtered = trips.filter (t) ->
+            for trip in filteredTrips
+                filtered = filteredTrips.filter (t) ->
                     t.trip_id == trip.trip_id and t.timestamp == trip.timestamp
 
                 if filtered.length > 1
                     console.log 'multiple timestamp things'
 
 
+            lowestTimestamp = Math.min.apply(Math,lastTimeStamps)
 
-            return trips
-        .each (trip) ->
+            files = [{
+                filename: __dirname + '/time-data/' + Moment(lowestTimestamp * 1000).format('YYYYMMDD') + '_trips.csv'
+                columns: ['trip_id', 'route_id', 'timestamp', 'current_status', 'stop_id', 'current_stop_sequence']
+            },{
+                filename: __dirname + '/time-data/' + Moment(lowestTimestamp * 1000).format('YYYYMMDD') + '_arrivaltimes.csv'
+                columns: ['trip_id', 'timestamp','stop_id','arrival_time','departure_time']
+            }];
+            
 
 
+            Promise.each files, (file) ->
+                fs.statAsync(file.filename)
+                .catch (err) ->
+                    if err.cause.code == 'ENOENT'
+                        return fs.writeFileAsync(file.filename, file.columns.join(','))
+                .then ->
+                    fs.openAsync file.filename, 'a'
+                .then (handle) ->
+                    file.handle = handle
+                    return file
+            .spread (timestamps, arrival_predictions) ->
+                for trip in filteredTrips
+                    tripData = timestamps.columns.map((col) -> trip[col]).join(',')
+                    fs.write timestamps.handle, '\n' + tripData
 
+                    for update in trip.stop_time_update
+                        update.trip_id = trip.trip_id
+                        update.timestamp = trip.timestamp
+                        update.arrival_time = update.arrival?.time.low
+                        update.departure_time = update.departure?.time.low
+                        updateData = arrival_predictions.columns.map((col) -> update[col]).join(',')
+                        fs.write arrival_predictions.handle, '\n' + updateData
 
-            DB('trip_timestamps')
-            .insert
-                trip_id: trip.trip_id
-                route_id: trip.route_id
-                timestamp: trip.timestamp
-                current_stop: trip.stop_id
-                current_status: trip.current_status
-                current_stop_sequence: trip.current_stop_sequence
+                return [timestamps, arrival_predictions]
+
+            .each (file) ->
+                fs.fsyncAsync file.handle
+            .each (file) ->
+                fs.closeAsync file.handle
+
+            lastTrips = trips
+            console.log Moment().format("HH:MM:ss") + " - Wrote #{filteredTrips.length} out of #{trips.length} trips in #{numFeeds} feeds."
+            return fs.writeFileAsync(__dirname + '/last_response.json',JSON.stringify(trips))
+            .then -> return Moment(lowestTimestamp * 1000)
+    .then (todayMoment) ->
+        if isCompressingNow then return true
+        isCompressingNow = true
+        yesterday = todayMoment.subtract(1,'days').format('YYYYMMDD')
+        files = [
+            __dirname + '/time-data/' + yesterday + '_trips.csv'
+            __dirname + '/time-data/' + yesterday + '_arrivaltimes.csv'
+        ]
+
+        Promise.each files, (file) ->
+            fs.statAsync(file)
             .then ->
+                new Promise (fulfill, reject) ->
+                    console.log Moment().format("HH:MM:ss") + " - Compressing #{file}"
+                    gzip = zlib.createGzip()
+                    inp = fs.createReadStream file
+                    out = fs.createWriteStream file + '.gz'
+                    inp.pipe(gzip).pipe(out)
 
-                stopRows = trip.stop_time_update.map (t) ->
-                    return {
-                        timestamp: trip.timestamp
-                        trip_id: trip.trip_id
-                        stop_id: t.stop_id
-                        arrival_time: t.arrival?.time.low
-                        departure_time: t.departure?.time.low
-                    }
+                    inp.on 'end', ->
+                        console.log Moment().format("HH:MM:ss") + " - Compression complete."
+                        fulfill fs.unlinkAsync file
+                    inp.on 'error', reject
+                    out.on 'error', reject
+            .catch (err) ->
+                if err.cause?.code != 'ENOENT' then throw err
+        .then ->
+            isCompressingNow = false
 
-                DB('timestamp_updates')
-                    .insert stopRows
-        
-        .then (trips) ->
-            #console.log "Inserted #{trips.length} trips..."
+        # Don't return the promise as we don't want the timer to be delayed by compression
+        return true
+
     .catch (err) ->
         # We just want to swallow the error
-        console.log "Error encountered: " + err
+        console.log Moment().format("HH:MM:ss") + "- Error encountered: " + err
         return true
     .finally ->
-        setTimeout doCheck, 15000
+        setTimeout doCheck, 5000
 
-doCheck()
+fs.readFileAsync(__dirname + '/last_response.json')
+.then (contents) ->
+    lastTrips = JSON.parse(contents)
+.catch (err) ->
+    console.log "No existing response"
+.then ->
+    doCheck()
