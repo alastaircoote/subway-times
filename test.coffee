@@ -30,8 +30,8 @@ CURRENT_STATUS =
 # We keep track of the timestamps in the headers, and disregard any we've already checked
 lastTimeStamps = []
 
-# We only add updated trips
-lastTrips = []
+
+lastTripTimestamps = {}
 
 fs.mkdirAsync(__dirname + '/time-data')
 .catch (err) ->
@@ -109,23 +109,47 @@ doCheck = ->
         trips = trips.filter (t) ->
             t.vehicle and t.stop_time_update
 
+        for trip in trips
+            match = trips.filter (t) -> t.trip_id == trip.trip_id and t.timestamp == trip.timestamp
+
+            if match.length > 1
+                console.log('WFFF') 
+
        
         Promise.filter trips, (trip) ->
-            if !lastTrips then return true
+            if !lastTripTimestamps then return true
             # Only add updates that have changed since last time.
 
-            entryLastTime = lastTrips.filter((t) -> t.trip_id == trip.trip_id)[0]
+            timestampLastTime = lastTripTimestamps[trip.trip_id]
 
             # No entry for this trip
-            if (!entryLastTime) then return true
+            if (!timestampLastTime) then return true
             # If it's the same timestamp, ignore
 
-            if (entryLastTime.timestamp == trip.timestamp)
+            if (timestampLastTime == trip.timestamp)
                 return false
 
             return true
 
+        
+        .each (validTrip) ->
+            # Now update those timestamps
+            lastTripTimestamps[validTrip.trip_id] = validTrip.timestamp
+        
         .then (filteredTrips) ->
+
+            # Filter out old timestamps for memory management
+            rightNowSeconds = Date.now() / 1000
+
+            deletedCount = 0
+            for key, val of lastTripTimestamps
+                if val < rightNowSeconds - (60 * 60 * 12) # 12 hours
+                    delete lastTripTimestamps[key]
+                    console.log("Deleting", key, val)
+                    deletedCount++
+
+            if deletedCount > 0
+                console.log Moment().format("HH:mm:ss") + " - Deleted #{deletedCount} old trip timestamps."
             
             for trip in filteredTrips
                 filtered = filteredTrips.filter (t) ->
@@ -177,9 +201,8 @@ doCheck = ->
             .each (file) ->
                 fs.closeAsync file.handle
 
-            lastTrips = trips
             console.log Moment().format("HH:mm:ss") + " - Wrote #{filteredTrips.length} out of #{trips.length} trips in #{numFeeds} feeds."
-            return fs.writeFileAsync(__dirname + '/last_response.json',JSON.stringify(trips))
+            return fs.writeFileAsync(__dirname + '/last_response.json',JSON.stringify(lastTripTimestamps))
             .then -> return Moment(lowestTimestamp * 1000)
     .then (todayMoment) ->
         if isCompressingNow then return true
@@ -230,7 +253,7 @@ doCheck = ->
 
 fs.readFileAsync(__dirname + '/last_response.json')
 .then (contents) ->
-    lastTrips = JSON.parse(contents)
+    lastTripTimestamps = JSON.parse(contents)
 .catch (err) ->
     console.log "No existing response"
 .then ->
