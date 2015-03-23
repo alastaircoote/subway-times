@@ -4,6 +4,17 @@ path = require 'path'
 fs = Promise.promisifyAll require 'fs'
 zlib = require 'zlib'
 requestAsync = Promise.promisify require 'request'
+AWS = require 'aws-sdk'
+
+awsCreds = require './aws.json'
+
+AWS.config.update
+    accessKeyId: awsCreds.key
+    secretAccessKey: awsCreds.secret
+
+s3Client = new AWS.S3()
+
+s3Stream = require('s3-upload-stream')(s3Client);
 
 Moment = require 'moment'
 
@@ -186,14 +197,22 @@ doCheck = ->
                     console.log Moment().format("HH:mm:ss") + " - Compressing #{file}"
                     gzip = zlib.createGzip()
                     inp = fs.createReadStream file
-                    out = fs.createWriteStream file + '.gz'
-                    inp.pipe(gzip).pipe(out)
+                    #out = fs.createWriteStream file + '.gz'
 
-                    inp.on 'end', ->
-                        console.log Moment().format("HH:MM:ss") + " - Compression complete."
+                    upload = s3Stream.upload({
+                      "Bucket": "subway-data",
+                      "Key": path.basename(file) + '.gz'
+                    });
+
+
+
+                    inp.pipe(gzip).pipe(upload)
+
+                    upload.on 'uploaded', (details) ->
+                        console.log Moment().format("HH:MM:ss") + " - Compression and upload complete."
                         fulfill fs.unlinkAsync file
                     inp.on 'error', reject
-                    out.on 'error', reject
+                    upload.on 'error', reject
             .catch (err) ->
                 if err.cause?.code != 'ENOENT' then throw err
         .then ->
