@@ -5,8 +5,11 @@ fs = Promise.promisifyAll require 'fs'
 zlib = require 'zlib'
 requestAsync = Promise.promisify require 'request'
 AWS = require 'aws-sdk'
+Bunyan = require 'bunyan'
 
 awsCreds = require './aws.json'
+
+log = Bunyan.createLogger({name: "Subway Times"})
 
 AWS.config.update
     accessKeyId: awsCreds.key
@@ -41,6 +44,7 @@ numFeeds = 0
 isCompressingNow = false
 
 doCheck = ->
+    log.info "Requesting data"
     Promise.map [
         'http://datamine.mta.info/mta_esi.php?key=247e4c91f9904df0b62dbc4ea9845c94&feed_id=1',
         'http://datamine.mta.info/mta_esi.php?key=247e4c91f9904df0b62dbc4ea9845c94&feed_id=2',
@@ -50,6 +54,7 @@ doCheck = ->
         requestAsync
             url: url
             encoding: null
+            timeout: 5000
         .then ([res,body]) ->
             response = null
             try
@@ -145,11 +150,11 @@ doCheck = ->
             for key, val of lastTripTimestamps
                 if val < rightNowSeconds - (60 * 60 * 12) # 12 hours
                     delete lastTripTimestamps[key]
-                    console.log("Deleting", key, val)
+                    log.info({key: key, val: val}, "Deleting cached trip over 12 hours old")
                     deletedCount++
 
             if deletedCount > 0
-                console.log Moment().format("HH:mm:ss") + " - Deleted #{deletedCount} old trip timestamps."
+                log.info({count: deletedCount}, "Deleted old trip timestamps")
 
             for trip in filteredTrips
                 filtered = filteredTrips.filter (t) ->
@@ -201,12 +206,12 @@ doCheck = ->
             .each (file) ->
                 fs.closeAsync file.handle
 
-            console.log Moment().format("HH:mm:ss") + " - Wrote #{filteredTrips.length} out of #{trips.length} trips in #{numFeeds} feeds."
+            log.info({wroteTrips: filteredTrips.length, totalTrips: trips.length, numFeeds: numFeeds}, "Write trips to file.")
             return fs.writeFileAsync(__dirname + '/last_response.json',JSON.stringify(lastTripTimestamps))
             .then -> return Moment(lowestTimestamp * 1000)
     .then (todayMoment) ->
         if isCompressingNow
-            console.log("Already compressing, will not restart")
+            log.info("Already compressing, will not restart")
             return true
 
         isCompressingNow = true
@@ -220,7 +225,7 @@ doCheck = ->
             fs.statAsync(file)
             .then ->
                 new Promise (fulfill, reject) ->
-                    console.log Moment().format("HH:mm:ss") + " - Compressing #{file}"
+                    log.info({file: file}, "Compressing old data file")
                     gzip = zlib.createGzip()
                     inp = fs.createReadStream file
                     #out = fs.createWriteStream file + '.gz'
@@ -235,7 +240,7 @@ doCheck = ->
                     inp.pipe(gzip).pipe(upload)
 
                     upload.on 'uploaded', (details) ->
-                        console.log Moment().format("HH:MM:ss") + " - Compression and upload complete."
+                        log.info({file: file}, "Compression and upload complete")
                         fulfill fs.unlinkAsync file
                     inp.on 'error', reject
                     upload.on 'error', reject
@@ -250,7 +255,7 @@ doCheck = ->
 
     .catch (err) ->
         # We just want to swallow the error
-        console.log Moment().format("HH:mm:ss") + "- Error encountered: " + err
+        log.error({err: err}, "Error encountered during compression")
         return true
     .then ->
         setTimeout doCheck, 5000
