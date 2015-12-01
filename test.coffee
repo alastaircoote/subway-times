@@ -253,7 +253,8 @@ doCheck = ->
                     upload.on 'error', reject
             .catch (err) ->
                 # If the file doesn't exist (i.e. is already uploaded) then we can swallow the error
-                if err.cause?.code != 'ENOENT' then throw err
+                if err.cause?.code != 'ENOENT'
+                    log.error({err: err}, "Error encountered during compression")
         .then ->
             isCompressingNow = false
 
@@ -262,7 +263,7 @@ doCheck = ->
 
     .catch (err) ->
         # We just want to swallow the error
-        log.error({err: err}, "Error encountered during compression")
+        log.error({err: err}, "Error encountered")
         return true
     .then ->
         setTimeout doCheck, 5000
