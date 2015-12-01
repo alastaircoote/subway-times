@@ -9,7 +9,14 @@ Bunyan = require 'bunyan'
 
 awsCreds = require './aws.json'
 
-log = Bunyan.createLogger({name: "Subway Times"})
+log = Bunyan.createLogger({
+    name: "Subway Times",
+    streams: [{
+        type: 'rotating-file',
+        path: './logs/subwaytimes.log',
+        period: '1d',   # daily rotation
+        count: 3        # keep 3 back copies
+}]})
 
 AWS.config.update
     accessKeyId: awsCreds.key
