@@ -57,7 +57,7 @@ doCheck = ->
             catch err
                 #console.log new Date().getHours() + ':' + new Date().getMinutes() + " - Parse of #{url} failed."
                 return null
-            
+
             return response
 
     .filter (response, i) ->
@@ -88,7 +88,7 @@ doCheck = ->
             if entity.trip_update
                 tripId = entity.trip_update.trip.trip_id
 
-                targetTrip = findTrip(tripId) 
+                targetTrip = findTrip(tripId)
                 targetTrip.stop_time_update = entity.trip_update.stop_time_update
 
             if entity.vehicle
@@ -113,9 +113,9 @@ doCheck = ->
             match = trips.filter (t) -> t.trip_id == trip.trip_id and t.timestamp == trip.timestamp
 
             if match.length > 1
-                console.log('WFFF') 
+                console.log('WFFF')
 
-       
+
         Promise.filter trips, (trip) ->
             if !lastTripTimestamps then return true
             # Only add updates that have changed since last time.
@@ -131,11 +131,11 @@ doCheck = ->
 
             return true
 
-        
+
         .each (validTrip) ->
             # Now update those timestamps
             lastTripTimestamps[validTrip.trip_id] = validTrip.timestamp
-        
+
         .then (filteredTrips) ->
 
             # Filter out old timestamps for memory management
@@ -150,7 +150,7 @@ doCheck = ->
 
             if deletedCount > 0
                 console.log Moment().format("HH:mm:ss") + " - Deleted #{deletedCount} old trip timestamps."
-            
+
             for trip in filteredTrips
                 filtered = filteredTrips.filter (t) ->
                     t.trip_id == trip.trip_id and t.timestamp == trip.timestamp
@@ -168,7 +168,7 @@ doCheck = ->
                 filename: __dirname + '/time-data/' + Moment(lowestTimestamp * 1000).format('YYYYMMDD') + '_arrivaltimes.csv'
                 columns: ['trip_id', 'timestamp','stop_id','arrival_time','departure_time']
             }];
-            
+
 
 
             Promise.each files, (file) ->
@@ -205,7 +205,10 @@ doCheck = ->
             return fs.writeFileAsync(__dirname + '/last_response.json',JSON.stringify(lastTripTimestamps))
             .then -> return Moment(lowestTimestamp * 1000)
     .then (todayMoment) ->
-        if isCompressingNow then return true
+        if isCompressingNow
+            console.log("Already compressing, will not restart")
+            return true
+
         isCompressingNow = true
         yesterday = todayMoment.subtract(1,'days').format('YYYYMMDD')
         files = [
@@ -237,6 +240,7 @@ doCheck = ->
                     inp.on 'error', reject
                     upload.on 'error', reject
             .catch (err) ->
+                # If the file doesn't exist (i.e. is already uploaded) then we can swallow the error
                 if err.cause?.code != 'ENOENT' then throw err
         .then ->
             isCompressingNow = false
@@ -248,7 +252,7 @@ doCheck = ->
         # We just want to swallow the error
         console.log Moment().format("HH:mm:ss") + "- Error encountered: " + err
         return true
-    .finally ->
+    .then ->
         setTimeout doCheck, 5000
 
 fs.readFileAsync(__dirname + '/last_response.json')
